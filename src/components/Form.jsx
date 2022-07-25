@@ -21,6 +21,8 @@ class Form extends React.Component {
           value={ cardDescription }
           onChange={ onInputChange }
         />
+        {' '}
+        Atributo1
         <input
           name="cardAttr1"
           type="number"
@@ -28,6 +30,7 @@ class Form extends React.Component {
           value={ cardAttr1 }
           onChange={ onInputChange }
         />
+        Atributo2
         <input
           name="cardAttr2"
           type="number"
@@ -35,6 +38,8 @@ class Form extends React.Component {
           value={ cardAttr2 }
           onChange={ onInputChange }
         />
+        {' '}
+        Atributo3
         <input
           name="cardAttr3"
           type="number"
