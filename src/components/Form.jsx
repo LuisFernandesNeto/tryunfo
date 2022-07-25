@@ -59,6 +59,7 @@ class Form extends React.Component {
           checked={ cardTrunfo }
           onChange={ onInputChange }
         />
+        Super Trybe Trunfo
         <button
           type="button"
           data-testid="save-button"
