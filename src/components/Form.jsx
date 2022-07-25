@@ -9,42 +9,48 @@ class Form extends React.Component {
     return (
       <form action="">
         <input
+          name="cardName"
           type="text"
           data-testid="name-input"
           value={ cardName }
           onChange={ onInputChange }
         />
         <textarea
+          name="cardDescription"
           data-testid="description-input"
           value={ cardDescription }
           onChange={ onInputChange }
         />
         <input
+          name="cardAttr1"
           type="number"
           data-testid="attr1-input"
           value={ cardAttr1 }
           onChange={ onInputChange }
         />
         <input
+          name="cardAttr2"
           type="number"
           data-testid="attr2-input"
           value={ cardAttr2 }
           onChange={ onInputChange }
         />
         <input
+          name="cardAttr3"
           type="number"
           data-testid="attr3-input"
           value={ cardAttr3 }
           onChange={ onInputChange }
         />
         <input
+          name="cardImage"
           type="text"
           data-testid="image-input"
           value={ cardImage }
           onChange={ onInputChange }
         />
         <select
-          name=""
+          name="cardRare"
           data-testid="rare-input"
           value={ cardRare }
           onChange={ onInputChange }
@@ -54,6 +60,7 @@ class Form extends React.Component {
           <option value="muito raro">muito raro</option>
         </select>
         <input
+          name="cardTrunfo"
           type="checkbox"
           data-testid="trunfo-input"
           checked={ cardTrunfo }
@@ -61,6 +68,7 @@ class Form extends React.Component {
         />
         Super Trybe Trunfo
         <button
+          name="isSaveButtonDisabled"
           type="button"
           data-testid="save-button"
           disabled={ isSaveButtonDisabled }
@@ -83,7 +91,7 @@ Form.propTypes = {
   cardImage: PropTypes.string.isRequired,
   cardRare: PropTypes.string.isRequired,
   cardTrunfo: PropTypes.bool.isRequired,
-  hasTrunfo: PropTypes.bool.isRequired,
+  /* hasTrunfo: PropTypes.bool.isRequired, */
   isSaveButtonDisabled: PropTypes.bool.isRequired,
   onInputChange: PropTypes.func.isRequired,
   onSaveButtonClick: PropTypes.func.isRequired,
