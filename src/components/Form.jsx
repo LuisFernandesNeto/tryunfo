@@ -8,7 +8,7 @@ class Form extends React.Component {
       isSaveButtonDisabled, onInputChange, onSaveButtonClick } = this.props;
     return (
       <form action="">
-        Card Name
+        Card Name:
         <input
           name="cardName"
           type="text"
@@ -18,7 +18,7 @@ class Form extends React.Component {
         />
         {' '}
         <br />
-        Card Description
+        Card Description:
         <textarea
           name="cardDescription"
           data-testid="description-input"
@@ -28,7 +28,7 @@ class Form extends React.Component {
         {' '}
         <br />
         {' '}
-        Atributo1
+        Atributo1:
         <input
           name="cardAttr1"
           type="number"
@@ -38,7 +38,7 @@ class Form extends React.Component {
         />
         {' '}
         <br />
-        Atributo2
+        Atributo2:
         <input
           name="cardAttr2"
           type="number"
@@ -49,7 +49,7 @@ class Form extends React.Component {
         {' '}
         <br />
         {' '}
-        Atributo3
+        Atributo3:
         <input
           name="cardAttr3"
           type="number"
