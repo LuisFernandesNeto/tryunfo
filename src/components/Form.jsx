@@ -8,6 +8,7 @@ class Form extends React.Component {
       isSaveButtonDisabled, onInputChange, onSaveButtonClick } = this.props;
     return (
       <form action="">
+        Card Name
         <input
           name="cardName"
           type="text"
@@ -15,12 +16,17 @@ class Form extends React.Component {
           value={ cardName }
           onChange={ onInputChange }
         />
+        {' '}
+        <br />
+        Card Description
         <textarea
           name="cardDescription"
           data-testid="description-input"
           value={ cardDescription }
           onChange={ onInputChange }
         />
+        {' '}
+        <br />
         {' '}
         Atributo1
         <input
@@ -30,6 +36,8 @@ class Form extends React.Component {
           value={ cardAttr1 }
           onChange={ onInputChange }
         />
+        {' '}
+        <br />
         Atributo2
         <input
           name="cardAttr2"
@@ -39,6 +47,8 @@ class Form extends React.Component {
           onChange={ onInputChange }
         />
         {' '}
+        <br />
+        {' '}
         Atributo3
         <input
           name="cardAttr3"
@@ -47,6 +57,8 @@ class Form extends React.Component {
           value={ cardAttr3 }
           onChange={ onInputChange }
         />
+        {' '}
+        <br />
         <input
           name="cardImage"
           type="text"
@@ -54,6 +66,8 @@ class Form extends React.Component {
           value={ cardImage }
           onChange={ onInputChange }
         />
+        {' '}
+        <br />
         <select
           name="cardRare"
           data-testid="rare-input"
@@ -64,6 +78,8 @@ class Form extends React.Component {
           <option value="raro">raro</option>
           <option value="muito raro">muito raro</option>
         </select>
+        {' '}
+        <br />
         <input
           name="cardTrunfo"
           type="checkbox"
@@ -72,6 +88,8 @@ class Form extends React.Component {
           onChange={ onInputChange }
         />
         Super Trybe Trunfo
+        {' '}
+        <br />
         <button
           name="isSaveButtonDisabled"
           type="button"
