@@ -89,20 +89,8 @@ class App extends React.Component {
     render() {
       const { savedCards } = this.state;
 
-      const cardMaps = savedCards
-        .map((card, index) => (<Card
-          key={ index }
-          cardName={ card.cardName }
-          cardDescription={ card.cardDescription }
-          cardAttr1={ card.cardAttr1 }
-          cardAttr2={ card.cardAttr2 }
-          cardAttr3={ card.cardAttr3 }
-          cardImage={ card.cardImage }
-          cardRare={ card.cardRare }
-          cardTrunfo={ card.cardTrunfo }
-        />));
-
       return (
+
         <div>
           <h1>Tryunfo</h1>
           <Form
@@ -111,7 +99,18 @@ class App extends React.Component {
             onInputChange={ this.onInputChange }
           />
           <Card { ...this.state } onInputChange={ this.onInputChange } />
-          {cardMaps}
+          {savedCards
+            .map((card, index) => (<Card
+              key={ index }
+              cardName={ card.cardName }
+              cardDescription={ card.cardDescription }
+              cardAttr1={ card.cardAttr1 }
+              cardAttr2={ card.cardAttr2 }
+              cardAttr3={ card.cardAttr3 }
+              cardImage={ card.cardImage }
+              cardRare={ card.cardRare }
+              cardTrunfo={ card.cardTrunfo }
+            />))}
         </div>
       );
     }
